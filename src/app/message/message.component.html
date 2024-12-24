@@ -1,0 +1,17 @@
+<mat-card class="message-card">
+  <div class="container">
+    <mat-form-field>
+      <mat-label>Message</mat-label>
+      <input matInput [(ngModel)]="messageToSend" (keydown.enter)="sendMessage()" placeholder="Enter message" />
+    </mat-form-field>
+    <!-- Send a message -->
+    <button mat-flat-button (click)="sendMessage()">Send</button>
+    <button mat-flat-button (click)="disconnect()">Disconnect</button>
+    <button mat-flat-button (click)="connect()">Connect</button>
+  </div>
+  <h4>Messages from Server:</h4>
+  <mat-chip-set aria-label="Fish selection">
+    <mat-chip *ngFor="let message of receivedMessages">{{ message.message }}</mat-chip>
+  </mat-chip-set>
+</mat-card>
+

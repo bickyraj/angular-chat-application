@@ -1,0 +1,8 @@
+.message-card {
+  padding: 20px;
+  max-width: 600px;
+}
+
+button {
+  border-radius: 0;
+}

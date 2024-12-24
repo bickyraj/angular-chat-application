@@ -1,0 +1,12 @@
+.mat-toolbar {
+  background-color: #2993ff !important;
+  color: #f6f6f6 !important;
+}
+
+.side-nav {
+  border-radius: 0;
+}
+
+.container {
+  padding: 10px;
+}
